@@ -1,5 +1,5 @@
 /* General Reset */
-body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
+body, h1, h2, h3, p, ul, li, a {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -13,77 +13,62 @@ body {
     background-color: #f4f4f9;
     color: #333;
     margin: 0;
-    padding: 0;
 }
 
 /* Header Navigation */
 header {
     background: #007bff;
-    color: #fff;
-    padding: 20px 0;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+.navbar {
+    padding: 10px 20px;
 }
 
-nav a {
-    font-size: 1.2rem;
-    color: #fff;
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav a {
+    font-size: 1rem;
+    color: white;
     font-weight: 500;
     text-transform: uppercase;
     transition: color 0.3s ease;
 }
 
-nav a:hover {
+.navbar-nav a:hover {
     color: #ffdd57;
 }
 
 /* Hero Section */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
+#home {
     background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
-    color: #fff;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
 }
 
-.hero h1 {
+#home h1 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto 30px;
-}
-
-.hero button {
-    background: #ffdd57;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 1rem;
+    margin-bottom: 10px;
     font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-.hero button:hover {
-    background: #ffc107;
+#home p {
+    font-size: 1.2rem;
 }
 
 /* About Section */
 #about {
-    padding: 60px 20px;
+    padding: 50px 20px;
     background-color: #ffffff;
     text-align: center;
 }
@@ -99,77 +84,68 @@ nav a:hover {
     margin: 0 auto 20px;
     font-size: 1rem;
     color: #555;
+    line-height: 1.8;
 }
 
 /* Skills Section */
 #skills {
-    padding: 60px 20px;
+    padding: 50px 20px;
     background: #f9f9f9;
-    text-align: center;
 }
 
 #skills h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    text-align: center;
     color: #333;
 }
 
 #skills ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
     padding: 0;
+    margin: 0;
 }
 
-#skills ul li {
-    background: #007bff;
-    color: #fff;
-    padding: 15px 25px;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#skills ul li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+#skills li {
+    font-size: 1.1rem;
+    padding: 10px 0;
+    color: #555;
 }
 
 /* Contact Section */
 #contact {
-    padding: 60px 20px;
-    background: #ffffff;
+    padding: 50px 20px;
+    background: #333;
+    color: white;
     text-align: center;
 }
 
 #contact h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #007bff;
+    color: #ffdd57;
 }
 
 #contact p {
     margin-bottom: 10px;
+    font-size: 1rem;
 }
 
 #contact a {
-    color: #007bff;
+    color: #ffdd57;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 #contact a:hover {
-    color: #0056b3;
+    color: white;
 }
 
 /* Footer */
 footer {
-    background: #343a40;
-    color: #ffffff;
+    background: #f4f4f9;
+    color: #666;
+    padding: 10px 0;
     text-align: center;
-    padding: 20px 10px;
     font-size: 0.9rem;
 }
 
@@ -184,21 +160,20 @@ footer a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav {
-        flex-wrap: wrap;
-        gap: 15px;
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .hero h1 {
+    #home h1 {
         font-size: 2rem;
     }
 
-    .hero p {
+    #home p {
         font-size: 1rem;
     }
 
     #skills ul {
-        flex-direction: column;
-        gap: 15px;
+        text-align: center;
     }
 }
