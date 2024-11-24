@@ -1,194 +1,204 @@
-/*===================================
-  General Styles
-======================================*/
-body {
-    font-family: 'Poppins', sans-serif;
+/* General Reset */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #212529;
-}
-
-a {
+    list-style: none;
     text-decoration: none;
-    color: inherit;
+    box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-p {
+body {
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    margin-bottom: 15px;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-/*===================================
-  Header Styles
-======================================*/
-.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    background: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navbar {
-    padding: 15px 20px;
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #343a40;
-    text-transform: uppercase;
-}
-
-.navbar-nav > li > a {
-    font-size: 1rem;
-    margin: 0 10px;
-    color: #343a40;
-    padding: 10px 0;
-    position: relative;
-}
-
-.navbar-nav > li > a:hover {
-    color: #007bff;
-}
-
-.navbar-toggler {
+/* Header Navigation */
+header {
     background: #007bff;
-    border: none;
-    padding: 5px 10px;
     color: #fff;
-    cursor: pointer;
+    padding: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/*===================================
-  Banner / Hero Section
-======================================*/
-#home {
-    height: 100vh;
-    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
-    color: #fff;
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffdd57;
+}
+
+/* Hero Section */
+.hero {
     text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: #fff;
 }
 
-#home h1 {
+.hero h1 {
     font-size: 2.5rem;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-#home p {
-    font-size: 1.25rem;
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
 }
 
-/*===================================
-  About Section
-======================================*/
+.hero button {
+    background: #ffdd57;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero button:hover {
+    background: #ffc107;
+}
+
+/* About Section */
 #about {
     padding: 60px 20px;
-    background: #ffffff;
+    background-color: #ffffff;
     text-align: center;
 }
 
 #about h2 {
-    color: #007bff;
+    font-size: 2rem;
     margin-bottom: 20px;
+    color: #007bff;
 }
 
-/*===================================
-  Skills Section
-======================================*/
+#about p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Skills Section */
 #skills {
     padding: 60px 20px;
-    background: #f1f1f1;
+    background: #f9f9f9;
+    text-align: center;
 }
 
 #skills h2 {
-    color: #343a40;
-    text-align: center;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 #skills ul {
-    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 0;
-    margin: 0;
 }
 
 #skills ul li {
+    background: #007bff;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
     font-size: 1rem;
-    margin-bottom: 10px;
-    padding-left: 25px;
-    position: relative;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#skills ul li:before {
-    content: "✔";
-    position: absolute;
-    left: 0;
+#skills ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
     color: #007bff;
 }
 
-/*===================================
-  Contact Section
-======================================*/
-#contact {
-    padding: 60px 20px;
-    background: #343a40;
-    color: #ffffff;
-    text-align: center;
+#contact p {
+    margin-bottom: 10px;
 }
 
 #contact a {
     color: #007bff;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 #contact a:hover {
-    text-decoration: underline;
+    color: #0056b3;
 }
 
-/*===================================
-  Footer
-======================================*/
+/* Footer */
 footer {
-    background: #f8f9fa;
+    background: #343a40;
+    color: #ffffff;
     text-align: center;
     padding: 20px 10px;
-    font-size: 0.875rem;
-    color: #6c757d;
+    font-size: 0.9rem;
 }
 
 footer a {
     color: #007bff;
+    text-decoration: none;
 }
 
-/*===================================
-  Responsive Styles
-======================================*/
+footer a:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    #home h1 {
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero h1 {
         font-size: 2rem;
     }
 
-    #home p {
+    .hero p {
         font-size: 1rem;
     }
 
-    .navbar-nav {
-        text-align: center;
-    }
-
-    .navbar-nav > li > a {
-        padding: 10px;
+    #skills ul {
+        flex-direction: column;
+        gap: 15px;
     }
 }
