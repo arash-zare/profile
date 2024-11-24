@@ -21,10 +21,6 @@
 </head>
 
 <body>
-<div id="loading">
-    <div class="load-circle"><span class="one"></span></div>
-</div>
-
 <header class="header">
     <div class="container">
         <nav class="navbar">
@@ -41,65 +37,76 @@
     </div>
 </header>
 
-
-
 <main>
-    <!-- Home Section with Profile Image -->
-    <section id="home" class="bg-dark text-white text-center p-5">
-        <div class="container">
-            <img src="assets/images/profile.jpg" alt="Profile Image" class="rounded-circle mb-4" 
-                style="width: 150px; height: 150px; object-fit: cover; border: 3px solid white;">
-            <h1 class="font-weight-bold">Arash Zare</h1>
-            <p class="lead">Data & DevOps Engineer</p>
-        </div>
-    </section>
+    <!-- Section to Export as PDF -->
+    <div id="pdfContent">
+        <section id="home" class="bg-dark text-white text-center p-5">
+            <div class="container">
+                <img src="assets/images/profile.jpg" alt="Profile Image" class="rounded-circle mb-4" 
+                    style="width: 150px; height: 150px; object-fit: cover; border: 3px solid white;">
+                <h1 class="font-weight-bold">Arash Zare</h1>
+                <p class="lead">Data & DevOps Engineer</p>
+            </div>
+        </section>
 
-    <section id="about" class="bg-light p-5">
-        <div class="container">
-            <h2 class="text-center">About Me</h2>
-            <p class="text-center">
-                An energetic Data and DevOps Engineer with over two years of experience in developing and managing
-                data infrastructures and cloud systems. Graduated with a Master's degree in Computer Engineering
-                from Shiraz University. Played a key role in the Cluster Health Check project at Derak Cloud Company,
-                which led to improved system performance and stability.
-            </p>
-            <p>
-                Skilled in tools like Docker, Docker Compose, ClickHouse, Kafka, Hadoop, and Ansible, and proficient
-                in programming with Python and Go. Extensive experience in containerization and orchestration using Docker,
-                enabling efficient deployment and scalability of applications. Passionate about optimizing systems through
-                automation and advanced monitoring using Grafana, Prometheus, VictoriaMetrics, and the ELK Stack.
-            </p>
-        </div>
-    </section>
+        <section id="about" class="bg-light p-5">
+            <div class="container">
+                <h2 class="text-center">About Me</h2>
+                <p class="text-center">
+                    An energetic Data and DevOps Engineer with over two years of experience in developing and managing
+                    data infrastructures and cloud systems. Graduated with a Master's degree in Computer Engineering
+                    from Shiraz University. Played a key role in the Cluster Health Check project at Derak Cloud Company,
+                    which led to improved system performance and stability.
+                </p>
+                <p>
+                    Skilled in tools like Docker, Docker Compose, ClickHouse, Kafka, Hadoop, and Ansible, and proficient
+                    in programming with Python and Go. Extensive experience in containerization and orchestration using Docker,
+                    enabling efficient deployment and scalability of applications. Passionate about optimizing systems through
+                    automation and advanced monitoring using Grafana, Prometheus, VictoriaMetrics, and the ELK Stack.
+                </p>
+            </div>
+        </section>
 
-    <section id="skills" class="bg-white p-5">
-        <div class="container">
-            <h2 class="text-center">Skills</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul>
-                        <li>Programming: Python, Go</li>
-                        <li>Big Data: Hadoop, Kafka, ClickHouse</li>
-                        <li>Containerization: Docker, Docker Compose</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul>
-                        <li>Automation: Ansible, Bash scripting</li>
-                        <li>Monitoring: Grafana, Prometheus, ELK Stack</li>
-                        <li>Project Management: Jira</li>
-                    </ul>
+        <section id="skills" class="bg-white p-5">
+            <div class="container">
+                <h2 class="text-center">Skills</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Programming: Python, Go</li>
+                            <li>Big Data: Hadoop, Kafka, ClickHouse</li>
+                            <li>Containerization: Docker, Docker Compose</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Automation: Ansible, Bash scripting</li>
+                            <li>Monitoring: Grafana, Prometheus, ELK Stack</li>
+                            <li>Project Management: Jira</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="bg-dark text-white text-center p-5">
+        <section id="contact" class="bg-dark text-white text-center p-5">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Email: <a href="mailto:arashzare2266@gmail.com" class="text-white">arashzare2266@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/arash-zare" target="_blank" class="text-white">https://github.com/arash-zare</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/arash-zare" target="_blank" class="text-white">https://linkedin.com/in/arash-zare</a></p>
+                <p>Tel: +989303612266</p>
+                <address>Iran , Fars , Shiraz</address>
+            </div>
+        </section>
+    </div>
+
+    <section id="resume" class="bg-light text-center p-5">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:arashzare2266@gmail.com" class="text-white">arashzare2266@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/arash-zare" target="_blank" class="text-white">https://github.com/arash-zare</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/arash-zare" target="_blank" class="text-white">https://linkedin.com/in/arash-zare</a></p>
+            <h2>Download My Profile</h2>
+            <button id="downloadPdfBtn" class="btn btn-primary btn-lg">
+                <i class="fa fa-download"></i> Download PDF
+            </button>
         </div>
     </section>
 </main>
@@ -108,6 +115,19 @@
     <p>&copy; 2024 Arash Zare. All Rights Reserved.</p>
 </footer>
 
-<script src="static/plugin/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+<script>
+    document.getElementById('downloadPdfBtn').addEventListener('click', function () {
+        const element = document.getElementById('pdfContent'); // Only export this section
+        const options = {
+            margin: 0.1,
+            filename: 'Arash_Zare_Profile.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
+        };
+        html2pdf().set(options).from(element).save();
+    });
+</script>
 </body>
 </html>

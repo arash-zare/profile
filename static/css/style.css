@@ -199,3 +199,52 @@ footer {
     padding: 20px;
     font-size: 14px;
 }
+/* Resume Section */
+#resume {
+    background-color: #f4f4f4; /* Light background */
+    color: #333;
+    padding: 60px 20px;
+}
+
+#resume h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#resume .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded button */
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#resume .btn-primary {
+    background-color: #007bff; /* Blue background */
+    color: #fff;
+    border: none;
+}
+
+#resume .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+#download-pdf .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#download-pdf .btn-primary {
+    background-color: #007bff; /* Blue background */
+    color: #fff;
+    border: none;
+}
+
+#download-pdf .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
