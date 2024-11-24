@@ -1,58 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Portfolio of an Energetic Data and DevOps Engineer">
-    <title>Data & DevOps Engineer - Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="Arash Zare - Data & DevOps Engineer Portfolio" name="description">
+    <meta content="Data Engineer, DevOps, Portfolio, Resume, Docker, ClickHouse, Kafka, Ansible, Python, Prometheus" name="keywords">
+    <meta content="Arash Zare" name="author">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <title>Arash Zare - Data & DevOps Engineer</title>
+    <!-- Favicon -->
+    <link href="assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800" rel="stylesheet">
+    <!-- CSS -->
+    <link href="static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/plugin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+    <link href="static/css/color/default.css" id="color_theme" rel="stylesheet">
 </head>
+
 <body>
-    <header>
+<div id="loading">
+    <div class="load-circle"><span class="one"></span></div>
+</div>
+
+<header class="header navbar-light">
+    <div class="container">
+        <nav class="navbar navbar-expand-md bg-white">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="navbar-nav ml-auto">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="home" class="bg-dark text-white text-center p-5">
         <div class="container">
-            <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Data & DevOps Engineer</h1>
-            <h2>An Energetic and Skilled Professional</h2>
+            <h1 class="font-weight-bold">Arash Zare</h1>
+            <p class="lead">Data & DevOps Engineer</p>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am an energetic Data and DevOps Engineer with over two years of experience in developing and managing data infrastructures and cloud systems. I hold a Master's degree in Computer Engineering from Shiraz University.
+    <section id="about" class="bg-light p-5">
+        <div class="container">
+            <h2 class="text-center">About Me</h2>
+            <p class="text-center">
+                An energetic Data and DevOps Engineer with over two years of experience in developing and managing
+                data infrastructures and cloud systems. Graduated with a Master's degree in Computer Engineering
+                from Shiraz University. Played a key role in the Cluster Health Check project at Derak Cloud Company,
+                which led to improved system performance and stability.
             </p>
             <p>
-                During my tenure at Derak Cloud Company, I played a pivotal role in the Cluster Health Check project, resulting in significant improvements in system performance and stability. My expertise lies in utilizing tools such as Docker, Docker Compose, ClickHouse, Kafka, Hadoop, and Ansible.
+                Skilled in tools like Docker, Docker Compose, ClickHouse, Kafka, Hadoop, and Ansible, and proficient
+                in programming with Python and Go. Extensive experience in containerization and orchestration using Docker,
+                enabling efficient deployment and scalability of applications. Passionate about optimizing systems through
+                automation and advanced monitoring using Grafana, Prometheus, VictoriaMetrics, and the ELK Stack.
             </p>
-            <p>
-                I am proficient in Python and Go programming languages, with extensive experience in containerization and orchestration using Docker for efficient deployment and scalability. I am passionate about optimizing systems through automation and advanced monitoring solutions like Grafana, Prometheus, VictoriaMetrics, and the ELK Stack.
-            </p>
-        </section>
+        </div>
+    </section>
 
-        <section id="skills">
-            <h2>Skills & Expertise</h2>
-            <ul>
-                <li>Programming: Python, Go</li>
-                <li>Big Data & Distributed Systems: Hadoop, Kafka, ClickHouse</li>
-                <li>Containerization & Orchestration: Docker, Docker Compose</li>
-                <li>Automation: Ansible, Bash scripting</li>
-                <li>Monitoring: Grafana, Prometheus, VictoriaMetrics, ELK Stack</li>
-                <li>Project Management: Jira</li>
-            </ul>
-        </section>
+    <section id="skills" class="bg-white p-5">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li>Programming: Python, Go</li>
+                        <li>Big Data: Hadoop, Kafka, ClickHouse</li>
+                        <li>Containerization: Docker, Docker Compose</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li>Automation: Ansible, Bash scripting</li>
+                        <li>Monitoring: Grafana, Prometheus, ELK Stack</li>
+                        <li>Project Management: Jira</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn Profile</a></p>
-            <p>GitHub: <a href="https://github.com/your-github" target="_blank">GitHub Profile</a></p>
-        </section>
-    </main>
+    <section id="contact" class="bg-dark text-white text-center p-5">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:arash.zare@example.com" class="text-white">arashzare2266@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/arash-zare" target="_blank" class="text-white">https://github.com/arash-zare</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/arash-zare" target="_blank" class="text-white">https://linkedin.com/in/arash-zare</a></p>
+        </div>
+    </section>
+</main>
 
-    <footer>
-        <p>&copy; 2024 Data & DevOps Engineer. All rights reserved.</p>
-    </footer>
+<footer class="bg-light text-center p-3">
+    <p>&copy; 2024 Arash Zare. All Rights Reserved.</p>
+</footer>
+
+<script src="static/plugin/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
