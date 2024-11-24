@@ -1,0 +1,201 @@
+/* General Body and Font Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background */
+    color: #333;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 20px;
+    text-align: center; /* Center align text by default */
+}
+
+
+
+/* Header Styling */
+header {
+    background-color: #333; /* Dark background */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+header .navbar {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar-toggler {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+header .navbar-toggler-icon {
+    background-color: #fff; /* White for visibility */
+    height: 2px;
+    width: 25px;
+    display: block;
+    position: relative;
+}
+
+header .navbar-toggler-icon::before,
+header .navbar-toggler-icon::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+}
+
+header .navbar-toggler-icon::before {
+    top: -7px;
+}
+
+header .navbar-toggler-icon::after {
+    top: 7px;
+}
+
+header .navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .navbar-nav li {
+    margin: 0 10px;
+}
+
+header .nav-link {
+    color: #fff; /* White text for contrast */
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+header .nav-link:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: #fff; /* Ensure text stays white */
+}
+
+
+
+
+/* Profile Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff; /* Blue background */
+    color: #fff;
+    padding: 100px 20px;
+}
+
+#home img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #fff; /* White border around profile picture */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#home h1 {
+    font-size: 36px;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+#home p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* About Section */
+#about {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+}
+
+#about h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px; /* Restrict paragraph width for better readability */
+}
+
+/* Skills Section */
+#skills ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#skills ul li {
+    background: #007bff;
+    color: #fff;
+    display: inline-block; /* Inline list items */
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#skills ul li:hover {
+    background: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Contact Section */
+#contact {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 20px;
+}
+
+#contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#contact a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    font-size: 14px;
+}
