@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -9,36 +9,30 @@
     <meta content="Arash Zare" name="author">
     <meta content="yes" name="apple-mobile-web-app-capable">
     <title>Arash Zare - Data & DevOps Engineer</title>
-
     <!-- Favicon -->
     <link href="assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800" rel="stylesheet">
     <!-- CSS -->
     <link href="static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="static/plugin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="static/css/style.css" rel="stylesheet">
     <link href="static/css/color/default.css" id="color_theme" rel="stylesheet">
-
 </head>
 
 <body>
-<header class="header bg-dark">
+<header class="header">
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <nav class="navbar">
+            <button class="navbar-toggler">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
+            <ul class="navbar-nav">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </nav>
     </div>
 </header>
@@ -48,7 +42,8 @@
     <div id="pdfContent">
         <section id="home" class="bg-dark text-white text-center p-5">
             <div class="container">
-                <img src="assets/images/profile.jpg" alt="Profile Image" class="rounded-circle mb-4 profile-img">
+                <img src="assets/images/profile.jpg" alt="Profile Image" class="rounded-circle mb-4" 
+                    style="width: 150px; height: 150px; object-fit: cover; border: 3px solid white;">
                 <h1 class="font-weight-bold">Arash Zare</h1>
                 <p class="lead">Data & DevOps Engineer</p>
             </div>
@@ -56,42 +51,43 @@
 
         <section id="about" class="bg-light p-5">
             <div class="container">
-                <h2 class="text-center section-title">About Me</h2>
-                <p>
-                    A highly motivated <strong>Data and DevOps Engineer</strong> with over <strong>two years of experience</strong> in designing, developing, and managing <strong>data infrastructures</strong> and <strong>cloud systems</strong>. Holds a <strong class="highlight-masters">Master's degree</strong> in <strong>Computer Engineering</strong> from <strong>Shiraz University</strong>. Played a key role in the <strong>Cluster Health Check project</strong> at <strong>Derak Cloud Company</strong>, leading to significant improvements in <strong>system performance and stability</strong>.
-                </p>
+                <h2 class="text-center">About Me</h2>
+                <p class="text-center">
+                    <p>
+                        An energetic Data and DevOps Engineer with over two years of experience in developing and managing
+                        data infrastructures and cloud systems. Graduated with a 
+                        <strong class="highlight-masters">Master's degree</strong> in Computer Engineering from 
+                        <strong class="highlight-shiraz">Shiraz University</strong>. Played a key role in the Cluster Health Check 
+                        project at <strong class="highlight-derak">Derak Cloud Company</strong>, which led to improved system 
+                        performance and stability.
+                    </p>
+                    
+                    <p>
+                        Skilled in tools like kubernetes, Ansible, Minio, ClickHouse, Kafka, Hadoop, and ..., and proficient 
+                        in programming with <strong class="highlight-python">Python</strong> and 
+                        <strong class="highlight-go">Go</strong>. Extensive experience in containerization and orchestration 
+                        using Docker, enabling efficient deployment and scalability of applications.
+                    </p>
+                    
             </div>
         </section>
 
         <section id="skills" class="bg-white p-5">
             <div class="container">
-                <h2 class="text-center section-title">Skills</h2>
+                <h2 class="text-center">Skills</h2>
                 <div class="row">
                     <div class="col-md-6">
-                        <h5><strong>DevOps & Infrastructure</strong></h5>
                         <ul>
-                            <li>Kubernetes, CI/CD, Docker, Ansible</li>
-                            <li>Infrastructure as Code (IaC)</li>
-                        </ul>
-
-                        <h5><strong>Data Engineering & Storage</strong></h5>
-                        <ul>
-                            <li>Hadoop, ClickHouse, Kafka, MinIO</li>
-                            <li>Data Pipeline Optimization</li>
+                            <li>Programming: Python, Go</li>
+                            <li>Big Data: Hadoop, Kafka, ClickHouse</li>
+                            <li>Containerization: Docker, Docker Compose</li>
                         </ul>
                     </div>
-
                     <div class="col-md-6">
-                        <h5><strong>Monitoring & Observability</strong></h5>
                         <ul>
-                            <li>Prometheus, VictoriaMetrics, Grafana</li>
-                            <li>ELK Stack, Performance Tracking</li>
-                        </ul>
-
-                        <h5><strong>Programming & Development</strong></h5>
-                        <ul>
-                            <li><span class="highlight-python">Python</span>, <span class="highlight-go">Go</span></li>
-                            <li>API Development, Backend Systems</li>
+                            <li>Automation: Ansible, Bash scripting</li>
+                            <li>Monitoring: Grafana, Prometheus, ELK Stack</li>
+                            <li>Project Management: Jira</li>
                         </ul>
                     </div>
                 </div>
@@ -102,10 +98,10 @@
             <div class="container">
                 <h2>Contact Me</h2>
                 <p>Email: <a href="mailto:arashzare2266@gmail.com" class="text-white">arashzare2266@gmail.com</a></p>
-                <p>GitHub: <a href="https://github.com/arash-zare" target="_blank" class="text-white">github.com/arash-zare</a></p>
-                <p>LinkedIn: <a href="https://linkedin.com/in/arash-zare" target="_blank" class="text-white">linkedin.com/in/arash-zare</a></p>
+                <p>GitHub: <a href="https://github.com/arash-zare" target="_blank" class="text-white">https://github.com/arash-zare</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/arash-zare" target="_blank" class="text-white">https://linkedin.com/in/arash-zare</a></p>
                 <p>Tel: +989303612266</p>
-                <address>Iran, Fars, Shiraz</address>
+                <address>Iran , Fars , Shiraz</address>
             </div>
         </section>
     </div>
@@ -124,15 +120,19 @@
     <p>&copy; 2024 Arash Zare. All Rights Reserved.</p>
 </footer>
 
-<!-- JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
 <script>
     document.getElementById('downloadPdfBtn').addEventListener('click', function () {
-        const element = document.getElementById('pdfContent');
-        html2pdf().from(element).save('Arash_Zare_Profile.pdf');
+        const element = document.getElementById('pdfContent'); // Only export this section
+        const options = {
+            margin: 0.1,
+            filename: 'Arash_Zare_Profile.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
+        };
+        html2pdf().set(options).from(element).save();
     });
 </script>
-
 </body>
 </html>
-
